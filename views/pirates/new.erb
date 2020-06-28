@@ -1,1 +1,22 @@
-<h1>Make your form here</h1>
+<h1>Enter Information About Pirate and Ships:</h1>
+<p>
+    <form action="/pirates" method="post">
+        <table cellpadding="3px">
+            <tr><td><h3>Pirate:</h3></td><td></td></tr>
+            <tr><td>Name:</td><td><input type="text"  name="pirate[name]"></td></tr>
+            <tr><td>Weight:</td><td><input type="text" name="pirate[weight]"></td></tr>
+            <tr><td>Height:</td><td><input type="text" name="pirate[height]"></td></tr>
+            <tr height="20px"><td></td><td></td></tr>
+            <tr><td><h3>Ship 1: </h3></td><td></td></tr>
+            <tr><td>Name:</td><td><input type="text" id="ship_name_1" name="pirate[ships][][name]"></td></tr>
+            <tr><td>Type: </td><td><input type="text" id="ship_type_1" name="pirate[ships][][type]"></td></tr>
+            <tr><td>Booty:</td><td><input type="text" id="ship_booty_1" name="pirate[ships][][booty]"></td></tr>
+            <tr height="10px"><td></td><td></td></tr>
+            <tr><td><h3>Ship 2: </h3></td><td></td></tr>
+            <tr><td>Name:</td><td><input type="text" id="ship_name_2" name="pirate[ships][][name]"></td></tr>
+            <tr><td>Type: </td><td><input type="text" id="ship_type_2" name="pirate[ships][][type]"></td></tr>
+            <tr><td>Booty:</td><td><input type="text" id="ship_booty_2" name="pirate[ships][][booty]"></td></tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</p>

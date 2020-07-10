@@ -1,1 +1,38 @@
-<h1>Make your form here</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pillage and Plunder</title>
+    </head>
+    <body>
+
+<h1>Create Your Pirate and Your Ship:</h1>
+
+<form action="/pirates" method="post">
+    <label for="name"> Pirate Name:</label><br> 
+    <input id="name" type="text" name="pirate[name]"><br><br>
+    <label for="weight"> Pirate Weight:</label><br>
+    <input id="weight" type="text" name="pirate[weight]"><br><br>
+    <label for="height"> Pirate Height:</label><br>
+    <input id="height" type="text" name="pirate[height]"><br><br>
+
+    <label for="name"> <b>First Ship Name:</b></label><br>
+    <input id="ship_name_1" type="text" name="pirate[ships][][name]"><br><br>
+    <label for="type"> Ship Type: </label><br>
+    <input id="ship_type_1" type="text" name="pirate[ships][][type]"><br><br>
+    <label for="booty"> Ship's Booty: </label><br>
+    <input id="ship_booty_1" type="text" name="pirate[ships][][booty]"><br><br>
+
+    <label for="name"> <b>Second Ship Name:</b></label><br>
+    <input id="ship_name_2" type="text" name="pirate[ships][][name]"><br><br>
+    <label for="type"> Ship Type: </label><br>
+    <input id="ship_type_2" type="text" name="pirate[ships][][type]"><br><br>
+    <label for="booty"> Ship's Booty: </label><br>
+    <input id="ship_booty_2" type="text" name="pirate[ships][][booty]"><br><br>
+
+    <input type="submit" value="Submit">
+    </form>
+
+    </body>
+    </html>
+    

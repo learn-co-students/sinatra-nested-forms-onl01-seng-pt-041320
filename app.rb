@@ -14,6 +14,7 @@ module FormsLab
     end
 
     post '/pirates' do
+      @name = params[:name]
       erb :show
     end
 

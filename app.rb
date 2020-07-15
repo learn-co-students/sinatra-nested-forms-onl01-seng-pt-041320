@@ -10,12 +10,11 @@ module FormsLab
     end
 
     get '/new' do
-      erb :pirates/new
+      erb :"pirates/new"
     end
 
     post '/pirates' do
-      @name = params[:name]
-      erb :show
+      erb :"pirates/show"
     end
 
   end

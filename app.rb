@@ -14,7 +14,16 @@ module FormsLab
     end
 
     post '/pirates' do
+      @sailor = Pirate.new(params[:pirate])
+
+      params[:pirate][ships].each do |bounty|
+        Ship.new(bounty)
+      end
+
+      @ships = Ship.all
+
       erb :"pirates/show"
+
     end
 
   end
